@@ -2,8 +2,8 @@
 
 #include "vec3.h"
 #include "ray.h"
-
-#define M_PI 3.141f
+#include "math.h"
+//#define M_PI 3.141f
 
 class camera {
 public:

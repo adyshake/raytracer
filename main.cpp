@@ -7,6 +7,7 @@
 #include "hitable_list.h"
 #include "camera.h"
 #include "material.h"
+#include "float.h"
 
 vec3 color(const ray &r, hitable *world, int depth) {
     hit_record rec;
@@ -57,8 +58,8 @@ hitable *random_scene() {
 int main() {
     srand((unsigned)time(NULL));
 
-    int nx = 200;
-    int ny = 100;
+    int nx = 1920;
+    int ny = 1080;
     int ns = 100;
     std::cout << "P3\n" << nx << " " << ny << "\n255\n";
     vec3 lower_left_corner(-2.0, -1.0, -1.0);
